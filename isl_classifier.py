@@ -1,10 +1,14 @@
 #%%
-import numpy as np
-import tensorflow as tf
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, EarlyStopping
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.models import load_model
+import numpy as np                                                                                     # multidimensional array
+import tensorflow as tf                                                                                #TensorFlow can train and run deep neural networks
+from tensorflow.keras.preprocessing.image import ImageDataGenerator                                    #This helps in Generating data from Image
+from tensorflow.keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, EarlyStopping               #Keras is a powerful and easy-to-use free open source Python library for developing and evaluating deep learning models. 
+
+
+from tensorflow.keras.optimizers import Adam                                                           #A callback is a set of functions to be applied at given stages of the training procedure. ... 
+                                                                                                       #This includes stopping training when you reach a certain accuracy/loss score, saving your model as a checkpoint after each successful epoch, adjusting the learning rates over time, and more.
+
+from tensorflow.keras.models import load_model                                                        # Adam is a replacement optimization algorithm for stochastic gradient descent for training deep learning models
 
 #%%
 class Classifier:
